@@ -3,7 +3,7 @@ import React from 'react';
 export default class extends React.Component{
 
   state = {
-        cnt: 1
+        cnt: 0
   };
 
   increace = () => {
