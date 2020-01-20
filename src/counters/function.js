@@ -1,35 +1,35 @@
 import React, {useState} from 'react';
 
-export default function(){
-    let [cnt, setCnt] = useState(0);
-    let [other, setOther] = useState(10);
+export default function(props){
 
-    let increase = () => {
-      setCnt(cnt + 1);
+    let [other, setOther] = useState(5);
 
+    console.log(setOther);
+
+    let vl = {value: other}
+
+    const decrese = () => {
+      // console.log(vl.value = useState.value);
     }
 
-    let setother = () => {
-      setOther(other + 2);
+    const increase = () => {
+      // console.log(vl.value);
     }
+
 
     return(
         <div>
-            <strong>
-                {cnt}
-            </strong>
-            <br/>
-            <strong>
-                {other}
-            </strong>
+            <button onClick={decrese}>
+                some -
+            </button>
+            <label >
+              <input type="text" value={vl.value} onChange={increase || decrese}></input>
+            </label>
+            <button onClick={increase}>
+                some +
+            </button>
 
             <br/>
-            <button onClick={increase}>
-                some
-            </button>
-            <button onClick={setother}>
-                some
-            </button>
         </div>
     );
 

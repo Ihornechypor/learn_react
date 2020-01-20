@@ -6,11 +6,10 @@ export default function(props){
   return (
     <div>
       <h2>Count of class</h2>
-      <CounterClass />
         <h2>
             counter of function
         </h2>
-      <CounterFunction />
+      <CounterFunction min={0} max={5} deff={0} />
     </div>
   );
 }
