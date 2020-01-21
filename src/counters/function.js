@@ -4,26 +4,28 @@ export default function(props){
 
     let [other, setOther] = useState(5);
 
-    console.log(setOther);
 
-    let vl = {value: other}
+    //
+    // const decrese = (e) => {
+    //     console.log(e.target.value);
+    //     other = other - 1;
+    //
+    //
+    // };
 
-    const decrese = () => {
-      // console.log(vl.value = useState.value);
-    }
-
-    const increase = () => {
-      // console.log(vl.value);
-    }
+    const increase = (e) => {
+        console.log(e);
+        other = other + 1;
+    };
 
 
     return(
         <div>
-            <button onClick={decrese}>
-                some -
-            </button>
+            {/*<button onClick={decrese}>*/}
+                {/*some -*/}
+            {/*</button>*/}
             <label >
-              <input type="text" value={vl.value} onChange={increase || decrese}></input>
+              <input type="text" value={other} onChange={increase}></input>
             </label>
             <button onClick={increase}>
                 some +
