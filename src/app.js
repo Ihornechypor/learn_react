@@ -9,7 +9,7 @@ export default function(props){
         <h2>
             counter of function
         </h2>
-      <CounterFunction min={0} max={5} deff={0} />
+        <CounterFunction />
     </div>
   );
 }
