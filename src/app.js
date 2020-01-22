@@ -1,15 +1,16 @@
 import React from 'react';
-import CounterClass from './counters/class.js';
-import CounterFunction from './counters/function.js';
+
+import CounterClassSimple from './hw/1-simple.js';
 
 export default function(props){
   return (
     <div>
       <h2>Count of class</h2>
         <h2>
-            counter of function
+            counter min max
         </h2>
-        <CounterFunction />
+        <CounterClassSimple min={1} max={5} />
+
     </div>
   );
 }
